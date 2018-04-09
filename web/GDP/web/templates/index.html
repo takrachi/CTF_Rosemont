@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>App</title>
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet"/>
+  </head>
+  <style>
+  .navbar {
+	  background-image: url("{{ url_for('static', filename='lock.gif') }}");
+	  background-repeat: round;
+  }
+  body {
+	  background-image: url("{{ url_for('static', filename='background.gif') }}");
+	  background-repeat: round;
+  }
+  .jumbotron {
+	  background-image: url("{{ url_for('static', filename='glitter.gif') }}");
+	  background-repeat: center;
+  }
+  .btn {
+	  background-image: url("{{ url_for('static', filename='fire.gif') }}");
+	  background-size: 90px 50px;
+	  color: #0000ff;
+	  background-color: #ffefcc;
+  }
+  </style>
+  <body>
+    <div class="container">
+    <br><br><br>
+	
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+	    <div class="navbar-header">
+		  <a class="navbar-brand"> G  D  P</a>
+		</div>
+      </div>
+    </nav>
+      
+    <!-- jumbotron -->
+    <div class="jumbotron">
+      <h4>GDP</h4>
+      <p>Gestionnaire de mots de passe personnel fait en Python. Ceci est la liste de mes mots de passe (chiffr&eacute;s).</p>
+	  <a class="btn" href="/?page=static/mdp.txt"><strong>Afficher les mots de passe</strong></a>
+	  <br><br> 
+	  {% if mdp %}
+	  <p>{% autoescape false %}{% print mdp %}{% endautoescape %}</p>
+	  {% endif %}
+	</div>
+	  <p><strong>Serveur construit &agrave; partir de https://github.com/Vetronus/heroku-flask-template
+</strong></p>
+    </div>
+  </body>
+</html>

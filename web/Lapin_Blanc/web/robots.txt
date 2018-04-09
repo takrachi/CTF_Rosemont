@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /#flag_lol_tu_ne_peux_pas_me_lire.txt
+Disallow: /my_database.txt

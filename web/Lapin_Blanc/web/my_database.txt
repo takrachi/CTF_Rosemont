@@ -1,0 +1,14 @@
+N O sql >:((((((
+
+MY TABLE : Users
+
++------+-----------+----------------------------------+----------+
+|  id  | username  | hash_password                    | is_admin |
++------+-----------+----------------------------------+----------+
+| 1    | admin     | f93fc10472a31bb3061aa0b45e228c5a | true     |
+| 2    | john      | 076bfc3dbe65272fd7f6247225d17837 | false    |
+| 3    | hax0r     | 1b6d4d8fb1e91f6cd84f96759853d956 | false    |
+| 4    | anonymus  | d27d2257b792decdf3cc1cb064f9f94a | true     |
+| 5    | Sofie     | 5fa4969a3788f80216fa34dff5aa32b6 | false    |
+| 6    | guest     | 781db717db0e3de80aaba20012665c5e | false    |
++------+-----------+----------------------------------+----------+
